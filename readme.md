@@ -643,7 +643,7 @@ Head to Github and Create a repository
 
 Video:
 
-![https://vimeo.com/user96670037/review/412179820/0a2c5a0538](https://paper-attachments.dropbox.com/s_E4A1CA674E71FF7B0E87416A9281438BCA922F6DF89522392451720B4845D891_1587956518286_image.png)
+[![](https://paper-attachments.dropbox.com/s_E4A1CA674E71FF7B0E87416A9281438BCA922F6DF89522392451720B4845D891_1587956518286_image.png)](https://vimeo.com/user96670037/review/412179820/0a2c5a0538)
 
 </details>
 
@@ -1302,10 +1302,10 @@ MONGO_DB_DATABASE_NAME="blog"
         npm run build --if-present
         npm run test --if-present
 ```
+</details>
 
 ## Appendix 1
 
-</details>
 
 **Create a Resource Group**
 
