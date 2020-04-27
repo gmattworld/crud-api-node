@@ -3,6 +3,8 @@
 const express = require('express'); // express for routing
 const bodyParser = require('body-parser');
 
+const registerArticleRoutes = require('./api/articles');
+
 // CONFIGURE APP
 const app = express();
 
@@ -38,6 +40,9 @@ router
   });
 
   app.use('/api', router);
+
+
+registerArticleRoutes(router);
 
 // START THE SERVER
 // =============================================================================
