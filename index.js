@@ -11,13 +11,33 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
 const port = process.env.PORT || 4000; // set our port
+
+// ROUTER
+
+const router = express.Router();
 
 // BASIC ROUTING
 
 app.get('/', function (_, res) {
   res.send('Welcome to our API');
 });
+
+router.get('/', function (req, res) {
+  res.json({ message: 'hooray! welcome to our api!' });
+});
+
+router
+  .route('/ping')
+  .post(function (req, res) {
+    res.send('You POST a PING');
+  })
+  .get(function (req, res) {
+    res.send('You GET a PING');
+  });
+
+  app.use('/api', router);
 
 // START THE SERVER
 // =============================================================================
